@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* header */
+
+header {
+  height: 4.5rem;
+  background: url('header.jpg');
+  background-position: center 65%;
+  background-size: 100%;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+}
+
+header h1, 
+header h3 {
+  padding-left: 0.7rem;
+}
+
+/* Menu items */
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding: 0.7rem;
+}
+
+.menu-item-info {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-info > p {
+  font-size: 36px;
+}
+
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+}
+
+.menu-item-name,
+.menu-item-price {
+  font-weight: bold;
+}
+
+.menu-item-ingredients {
+  color: rgb(125, 125, 125);
+  font-size: 12px;
+}
+
+.menu-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-add {
+  background-color: white;
+  color: rgb(62, 62, 62);
+  font-weight: lighter;
+  border: 1px solid rgb(125, 125, 125);
+  border-radius: 40px;
+  font-size: 15px;
+  padding: 0 5px;
+  transition: background-color 0.15s;
+}
+
+.menu-item-add:hover {
+  background-color: rgb(125, 125, 125);
+  color: white;
+  cursor: pointer;
+}
+
+/* Order summary */
+
+#order {
+  margin-top: 1rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-header,
+.order-item {
+  font-weight: bold;
+}
+
+.order-header {
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.order-total {
+  width: 75%;
+  display: flex;
+  gap: 2px;
+  font-weight: bold;
+  justify-content: space-between;
+  border-top: 1px solid rgb(125, 125, 125);
+  margin-top: 5px;
+}
+
+.order-btn {
+  margin-top: 1rem;
+  background-color: rgb(206, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 75%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: opacity 0.15s;
+}
+
+.order-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.order-btn:active {
+  opacity: 1;
+  background-color: rgb(178, 0, 0);
+}
+
+/*Credit card form modal*/
+
+.hidden {
+  display: none;
+}
+
+#pay-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50vw;
+  height: 40vh;
+  background-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+.pay-modal-header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+form input:last-of-type {
+  margin-bottom: 1rem;
+}
+
+#pay-btn {
+  display: block;
+  margin: auto;
+  background-color: rgb(206, 0, 0);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: opacity 0.15s;
+}
+
+#pay-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#pay-btn:active {
+  opacity: 1;
+  background-color: rgb(178, 0, 0);
+}

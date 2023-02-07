@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rudy's Diner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Rudy's Diner</h1>
+      <h3>Quality Food</h3>
+    </header>
+    <main>
+      <div id="menu">
+        <!--menu items appear here-->
+      </div>
+      <div id="order">
+        <!--user's order appear here-->
+      </div>
+      <div id="pay-modal" class="hidden">
+        <!--form modal-->
+        <form id="order-form" autocomplete="off">
+          <p class="pay-modal-header">Enter card details</p>
+          <input id="name-input" class="form-input" type="text" name="name" placeholder="Full name" required />
+          <input id="card-number-input" class="form-input" type="text" name="card-number" placeholder="Card number" maxlength="16" required />
+          <input id="card-cvv-input" class="form-input" type="text" name="card-cvv" placeholder="CVV" maxlength="4" required />
+          <input type="submit" id="pay-btn" value="Pay">
+        </form>
+      </div>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
